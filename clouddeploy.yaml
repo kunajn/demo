@@ -1,0 +1,17 @@
+apiVersion: deploy.cloud.google.com/v1
+kind: DeliveryPipeline
+metadata:
+  name: nginx-pipeline
+description: Pipeline for Nginx app
+serialPipeline:
+  stages:
+  - targetId: gke-prod
+    profiles: []
+---
+apiVersion: deploy.cloud.google.com/v1
+kind: Target
+metadata:
+  name: gke-prod
+description: GKE Autopilot production cluster
+gke:
+  cluster: projects/YOUR_PROJECT_ID/locations/YOUR_REGION/clusters/YOUR_CLUSTER_NAME
