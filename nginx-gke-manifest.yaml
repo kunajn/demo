@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: s-central1-docker.pkg.dev/$PROJECT_ID/demo/my-nginx-app:$SHORT_SHA
+        image: your-docker-registry/my-nginx-app
         ports:
         - containerPort: 80
 ---
