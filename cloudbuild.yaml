@@ -17,4 +17,5 @@ steps:
     - 'release-$SHORT_SHA'
     - '--delivery-pipeline=nginx-pipeline'
     - '--region=us-central1'
+    - '--to-target=gke-prod'
     - '--images=your-docker-registry/my-nginx-app=us-central1-docker.pkg.dev/$PROJECT_ID/demo/my-nginx-app:$SHORT_SHA'
