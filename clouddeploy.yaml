@@ -14,4 +14,4 @@ metadata:
   name: gke-prod
 description: GKE Autopilot production cluster
 gke:
-  cluster: projects/YOUR_PROJECT_ID/locations/YOUR_REGION/clusters/YOUR_CLUSTER_NAME
+  cluster: projects/gcp-portability/locations/us-central1/clusters/demo
